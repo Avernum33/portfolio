@@ -1,0 +1,38 @@
+body{
+    display: flex;
+}
+.inner-row{
+    display: flex;
+    
+}
+ .nav{
+    flex : 1 1 100px;
+    min-height: 20px;
+    min-width: 100px;
+    padding: 1em;
+    
+    background-color : rgb(198, 255, 113);
+    
+}
+.head{
+    flex : 2 1 auto;
+    background-color: blue;
+    padding-top: 1em;
+}
+
+.inner-col article{
+    flex : 1 1 auto;
+    padding : 1em;
+    min-height: 200px;
+    min-width: 200px;
+    background-color: white;
+}
+.inner-row footer{
+    flex : 0 1 auto;
+    
+    padding : 1em;
+    background-color: brown;
+    
+}
+
+
