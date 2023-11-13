@@ -19,12 +19,10 @@
             width: 100%;
             background-color: #333;
             color: #fff;
-            padding: 10px;
             text-align: center;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 10px;
         }
 
         nav {
@@ -39,17 +37,23 @@
 
         h1 {
             text-align: center;
-            margin-top: 80px; /* Ajuster selon vos besoins */
             margin-right: 20px;
+            align-self: end;
         }
 
         #espaceheader{
-            margin-bottom: 250px;
+            margin-bottom: 350px;
         }
 
         section {
             margin: 0px 20px 20px; /* Ajout de marge pour éviter de cacher le contenu sous le header fixe */
             text-align: center;
+        }
+
+        #pp{
+            width : 200px;
+            height : auto;
+            clip-path:ellipse(50% 33%)
         }
 
         .portfolio-item {
@@ -89,15 +93,17 @@
 <body>
     <header>
         <nav>
-            <a href="#">Accueil</a>
-            <a href="#">Projets</a>
+            <a href="https://avernum33.github.io/portfolio/">Projet</a>
+            <a href="#">Presentation</a>
             <a href="#">Contact</a>
         </nav>
+        
+        <img src="img/MoiAirsoft.jpg" alt="pp" id="pp">
         <h1>Portfolio de Mathieu DUBERNET</h1>
     </header>
-    <div id="espaceheader">
 
-    </div>
+    <div id="espaceheader"></div>
+
     <section>
         <div class="portfolio-item">
             <h3>Projet 1</h3>
