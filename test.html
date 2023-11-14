@@ -25,24 +25,34 @@
             align-items: center;
         }
 
-        nav {
+        #menu {
             display: inline-block;
+            margin-right: 20px;
         }
 
-        nav a {
+        #menu a {
             color: #fff;
             text-decoration: none;
-            margin: 0 15px;
+            padding: 10px 15px;
+            border-radius: 30px;
         }
 
-        h1 {
-            text-align: center;
-            margin-right: 20px;
+        #menu a:hover {
+            background-color: black;
+        }
+
+        #divNom{
+            display: flex;
+            margin-left: 15%;
+        }
+
+        #nom {
+            text-align: left;
             align-self: end;
         }
 
         #espaceheader{
-            margin-bottom: 350px;
+            margin-bottom: 130px;
         }
 
         section {
@@ -51,9 +61,10 @@
         }
 
         #pp{
-            width : 200px;
+            width : 70px;
             height : auto;
-            clip-path:ellipse(50% 33%)
+            clip-path:ellipse(50% 33%);
+            margin-right: 15px;
         }
 
         .portfolio-item {
@@ -65,7 +76,7 @@
         .portfolio-item img {
             max-width: 100%; /* La largeur maximale de l'image est maintenant de 100% de son conteneur */
             height: auto;
-            max-height: 300px;
+            max-height: 400px;
         }
 
         .portfolio-item h3 {
@@ -73,12 +84,13 @@
         }
 
         @media (max-width: 800px) {  /*mode petit*/
-            nav{
+            #menu{
                 display: flex;
                 flex-direction: column;
             }
-            nav a {
-                margin: 10px 15px;
+            #menu a {
+                padding: 7px 10px;
+                margin: 3px 5px;
             }
         }
         @media (min-width: 800px) {   /*mode grand*/
@@ -92,14 +104,17 @@
 
 <body>
     <header>
-        <nav>
+        <div id="divNom">
+            <img src="img/MoiAirsoft.jpg" alt="pp" id="pp">
+            <h3 id="nom">Portfolio de Mathieu DUBERNET</h3>
+        </div>
+        <nav id="menu">
             <a href="https://avernum33.github.io/portfolio/">Projet</a>
             <a href="#">Presentation</a>
             <a href="#">Contact</a>
         </nav>
         
-        <img src="img/MoiAirsoft.jpg" alt="pp" id="pp">
-        <h1>Portfolio de Mathieu DUBERNET</h1>
+        
     </header>
 
     <div id="espaceheader"></div>
